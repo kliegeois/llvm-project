@@ -1087,9 +1087,9 @@ private:
   Pass *LegacyPass = nullptr;
 };
 
-template <typename Analysis>
-constexpr bool AnalysisGetter::HasLegacyWrapper<
-      Analysis, std::void_t<typename Analysis::LegacyWrapper>> = true;
+//template <typename Analysis>
+//constexpr bool AnalysisGetter::HasLegacyWrapper<
+//      Analysis, std::void_t<typename Analysis::LegacyWrapper>> = true;
 
 /// Data structure to hold cached (LLVM-IR) information.
 ///
